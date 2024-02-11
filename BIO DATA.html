@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STUDENT BIO -DATA </title>
+<style>
+     table,th,tr,td{
+         border:1px solid black;
+         
+          }
+</style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <th colspan='4'><center>SYMPOSIUM REGISTRATION</center></th>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+          </td>
+        </tr>
+        <tr>
+          <td>Qualification:</td>
+          <td>
+            <select name="qualification">
+              <option value="undergraduate">Undergraduate</option>
+              <option value="graduate">Graduate</option>
+              <option value="postgraduate">Postgraduate</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Department:</td>
+          <td><input type="text" name="department"></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="address"></textarea></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input type="text" name="city"></td>
+        </tr>
+        <tr>
+          <td>Pincode:</td>
+          <td><input type="text" name="pincode"></td>
+        </tr>
+        <tr>
+          <td>Mobile Number:</td>
+          <td><input type="text" name="mobileNumber">
+          <label><input type="checkbox" name="pleaseDontCall" value="true"> Please don't call me</label></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <td>Events:</td>
+          <td>
+            <label><input type="checkbox" name="events[]" value="event1"> Event 1</label><br>
+            <label><input type="checkbox" name="events[]" value="event2"> Event 2</label><br>
+            <label><input type="checkbox" name="events[]" value="event3"> Event 3</label><br>
+            <label><input type="checkbox" name="events[]" value="event4"> Event 4</label><br>
+            <label><input type="checkbox" name="events[]" value="event5"> Event 5</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Send"></td>
+          <td><input type="reset" value="Reset"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
